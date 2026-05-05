@@ -1,0 +1,13 @@
+body { font-family: sans-serif; line-height: 1.6; margin: 0; background: #f4f4f4; }
+header { background: #2c3e50; color: white; padding: 20px; text-align: center; }
+nav ul { list-style: none; padding: 0; display: flex; justify-content: center; gap: 20px; }
+nav a { color: white; text-decoration: none; font-weight: bold; }
+main { max-width: 800px; margin: 20px auto; background: white; padding: 30px; border-radius: 8px; }
+fieldset { border: 1px solid #ddd; margin-bottom: 20px; padding: 15px; }
+legend { font-weight: bold; color: #e91e63; }
+input[type="text"], input[type="email"], input[type="tel"], select, textarea { 
+    width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; box-sizing: border-box;
+}
+.submit-btn { background: #e91e63; color: white; border: none; padding: 15px 30px; cursor: pointer; width: 100%; font-size: 1.1em; }
+footer { background: #333; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+footer a { color: #ffeb3b; text-decoration: none; }
