@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Soporte Técnico Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-area">
+            <h1>🛠️ TecnoSoluciones S.L.</h1>
+            <p>NIF: B-98765432 | Calle Bemen3 123, Barcelona | soporte@tecnosoluciones.com</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Tarifas</a></li>
+                <li><a href="#">Quiénes somos</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#formulario" class="btn-nav">Envía tu incidencia</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="formulario">
+            <h2>Gestión de Incidencias Técnicas</h2>
+            <p>Por favor, rellena todos los campos marcados como obligatorios.</p>
+            
+            <form action="#">
+                <fieldset>
+                    <legend>Datos del Cliente</legend>
+                    <input type="text" placeholder="Nombre completo" required>
+                    <input type="email" placeholder="Correo electrónico" required>
+                    <input type="tel" placeholder="Teléfono de contacto" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Identificación del Equipo</legend>
+                    <input type="text" placeholder="Marca y Modelo" required>
+                    
+                    <label>Sistema Operativo:</label>
+                    <select required>
+                        <option value="">Seleccione uno...</option>
+                        <option value="windows">Windows</option>
+                        <option value="linux">Linux</option>
+                        <option value="macos">macOS</option>
+                    </select>
+
+                    <div class="radio-group">
+                        <label>Tipo de equipo:</label>
+                        <input type="radio" name="tipo" value="sobremesa" id="pc"> <label for="pc">Sobremesa</label>
+                        <input type="radio" name="tipo" value="portatil" id="laptop"> <label for="laptop">Portátil</label>
+                        <input type="radio" name="tipo" value="servidor" id="srv"> <label for="srv">Servidor</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Componentes afectados (Selección múltiple)</legend>
+                    <label><input type="checkbox"> Disco Duro</label>
+                    <label><input type="checkbox"> Memoria RAM</label>
+                    <label><input type="checkbox"> Procesador (CPU)</label>
+                    <label><input type="checkbox"> Fuente de alimentación</label>
+                    <label><input type="checkbox"> Pantalla / Monitor</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Descripción de la Avería</legend>
+                    <textarea placeholder="Síntomas: ¿Qué hace el equipo?" rows="4" required></textarea>
+                    <input type="text" placeholder="Señales acústicas (beeps) o errores en pantalla">
+                    <input type="text" placeholder="Última acción realizada antes del error">
+                </fieldset>
+
+                <div class="urgencia-area">
+                    <label>Nivel de Urgencia:</label>
+                    <select required>
+                        <option value="baja">Baja</option>
+                        <option value="media">Media</option>
+                        <option value="alta">Alta (Crítica)</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="submit-btn">Registrar Incidencia</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="socials">
+                <span>Síguenos:</span>
+                <a href="#">Facebook</a> | <a href="#">LinkedIn</a> | <a href="#">Twitter</a>
+            </div>
+            <div class="legal">
+                <a href="#">Política de Privacidad</a> | <a href="#">Aviso Legal</a>
+            </div>
+            <div class="horario">
+                <strong>Horario:</strong> Lunes a Viernes de 09:00 a 19:00
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
